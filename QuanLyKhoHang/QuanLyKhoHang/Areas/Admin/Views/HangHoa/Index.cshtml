@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "Index";
 }
+<
 
 <h2>Index</h2>
 
@@ -53,54 +54,55 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.LoaiHang.TenLH)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NhomHang.TenNH)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TenHH)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.SoLuong)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.KichThuoc)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.KhoiLuong)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NgaySX)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.HanSD)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LoSX)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.GiaBan)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.GiaNhap)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TrinhTrang)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DinhMuc)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.MaHH }) |
-            @Html.ActionLink("Details", "Details", new { id=item.MaHH }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.MaHH })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.LoaiHang.TenLH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NhomHang.TenNH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenHH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoLuong)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KichThuoc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KhoiLuong)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgaySX)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HanSD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LoSX)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GiaBan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GiaNhap)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrinhTrang)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DinhMuc)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.MaHH }) |
+                @Html.ActionLink("Details", "Details", new { id = item.MaHH }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.MaHH })
+            </td>
+        </tr>
+    }
 
 </table>
 @section GiaoDich{
@@ -130,31 +132,8 @@
         <label class="radio-inline">
             <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Tháng này
         </label><br />
-       
-            <div class="row">
-                <div class='col-sm-5'>
-                    <div class="form-group">
-                        <div class='input-group date' id='datetimepicker1'>
-                            <input type='text' class="form-control" />
-                            <span class="input-group-addon">
-                                <span class="glyphicon glyphicon-calendar"></span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker1').datetimepicker({
-                    defaultDate: "11/1/2013",
-                    disabledDates: [
-                        moment("12/25/2013"),
-                        new Date(2013, 11 - 1, 21),
-                        "11/22/2013 00:53"
-                    ]
-                });
-            });
-                </script>
-           
-        </div>
+        
     </div>
+
 }
+
