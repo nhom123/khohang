@@ -37,21 +37,100 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+                <a class="navbar-brand" href="index.html">Quản Lí Kho Hàng</a>
             </div>
             <!-- /.navbar-header -->
             <!-- /.navbar-top-links -->
-            <div class="navbar-default sidebar" role="navigation">
-                <div class="sidebar-nav navbar-collapse">
-                    i'll be loving youuuuuuu forever
-                    deep insid my heart to leave you .......
-                    @RenderSection("FirstMenu",false)
-                    @RenderSection("GiaoDich", false)
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- /.dropdown -->
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Thiết lập
+                        <i class="fa fa-gear fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li>
+                            <a href="#">Quản Lí Người Dùng</a>
+                        </li>
+                        <li>
+                            <a href="#">Thông tin cửa hàng</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tài Khoản
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li>
+                            <a href="#"><i class="fa fa-user fa-fw"></i>Thông tin</a>
+                        </li>
+                        <li>
+                            <a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Đăng xuất</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <div class="row" style="clear:both;">
+                <div id="navbar" class="navbar-collapse collapse col-md-6 col-md-offset-3">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tổng Quan </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hàng Hóa </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Danh mục</a></li>
+                                <li><a href="#">Thiết lập giá</a></li>
+                                <li><a href="#">Tồn kho</a></li>
+                                <li><a href="#">Kiểm Kho</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Giao Dịch </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Đối tác </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Nhà cung cấp</a></li>
+                                <li><a href="#">Khách Hàng</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sổ quỹ</a>
+
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Báo Cáo </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Báo cáo bán hàng</a></li>
+                                <li><a href="#">Báo cáo tài chính</a></li>
+                                <li><a href="#">Báo cáo hàng hóa</a></li>
+                                <li><a href="#">Báo cáo cuối ngày</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Công nợ </a>
+                        </li>
+                    </ul>
+
                 </div>
-                <!-- /.sidebar-collapse -->
             </div>
-            <!-- /.navbar-static-side -->
         </nav>
+        <div class="col-md-2" id="leftCol">
+
+            @RenderSection("HangHoa", false)
+            @RenderSection("GiaoDich", false)
+            @RenderSection("DoiTac",false)
+     
+
+        </div>
+            <!-- /.navbar-static-side -->
+     
         <div id="page-wrapper">
 
             @RenderBody()

@@ -132,6 +132,11 @@
     <Content Include="Areas\Admin\Views\HangHoa\Details.cshtml" />
     <Content Include="Areas\Admin\Views\HangHoa\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\HangHoa\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\PhieuThuChis\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\PhieuThuChis\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\PhieuThuChis\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\PhieuThuChis\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\PhieuThuChis\Index.cshtml" />
     <None Include="Properties\PublishProfiles\abc.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -146,6 +151,7 @@
     <Compile Include="Areas\Admin\Controllers\DoiTacController.cs" />
     <Compile Include="Areas\Admin\Controllers\GiaoDichController.cs" />
     <Compile Include="Areas\Admin\Controllers\HangHoaController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PhieuThuChisController.cs" />
     <Compile Include="Areas\Main\Controllers\HomeController.cs" />
     <Compile Include="Areas\Main\MainAreaRegistration.cs" />
     <Compile Include="Areas\Sale\Controllers\SaleController.cs" />
@@ -168,6 +174,7 @@
     <Compile Include="Models\Entities\NhanVien.cs" />
     <Compile Include="Models\Entities\NhomHang.cs" />
     <Compile Include="Models\Entities\PhanQuyen.cs" />
+    <Compile Include="Models\Entities\PhieuThuChi.cs" />
     <Compile Include="Models\Entities\sysdiagram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

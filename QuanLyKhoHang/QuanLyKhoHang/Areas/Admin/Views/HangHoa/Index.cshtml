@@ -103,58 +103,21 @@
 }
 
 </table>
-@section GiaoDich{
+@section HangHoa{
     <div style="padding:10px;">
         <h3><small>Tìm kiếm</small></h3>
-        <input type="text" class="form-control" value="mã hàng, tên hàng" />
-        <input type="text" class="form-control" value="mã hóa đơn" />
-        <input type="text" class="form-control" value=" mã KH hoắc tên KH" />
-        <input type="text" class="form-control" value="theo người tạo" />
-        <h3><small>Lọc theo trạng thái</small></h3>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Đã hoàn thành
+        <input type="text" class="form-control" value="Tìm kiếm mặt hàng" />
+        <h3><small>Loại hàng</small></h3>
+        <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1"> Combo - đóng gói
         </label><br />
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Đã hủy
+        <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1"> Dịch vụ
         </label><br />
-        <h3><small>Lọc theo thời gian</small></h3>
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Toàn thời gian
+        <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1"> Hàng hóa
         </label><br />
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Hôm nay
-        </label><br />
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Tuần này
-        </label><br />
-        <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Tháng này
-        </label><br />
-       
-            <div class="row">
-                <div class='col-sm-5'>
-                    <div class="form-group">
-                        <div class='input-group date' id='datetimepicker1'>
-                            <input type='text' class="form-control" />
-                            <span class="input-group-addon">
-                                <span class="glyphicon glyphicon-calendar"></span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker1').datetimepicker({
-                    defaultDate: "11/1/2013",
-                    disabledDates: [
-                        moment("12/25/2013"),
-                        new Date(2013, 11 - 1, 21),
-                        "11/22/2013 00:53"
-                    ]
-                });
-            });
-                </script>
-           
-        </div>
+        <h3><small>Nhóm hàng</small></h3>
+        <p>An empty street, an empty house</p>
     </div>
 }
