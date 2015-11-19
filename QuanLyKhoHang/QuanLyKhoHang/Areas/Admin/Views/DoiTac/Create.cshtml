@@ -16,7 +16,7 @@
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
             @Html.LabelFor(model => model.MaDT, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
+            <div class="col-md-6">
                 @Html.EditorFor(model => model.MaDT, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.MaDT, "", new { @class = "text-danger" })
             </div>
@@ -24,7 +24,7 @@
 
         <div class="form-group">
             @Html.LabelFor(model => model.MaSoThue, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
+            <div class="col-md-6">
                 @Html.EditorFor(model => model.MaSoThue, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.MaSoThue, "", new { @class = "text-danger" })
             </div>
@@ -32,7 +32,7 @@
 
         <div class="form-group">
             @Html.LabelFor(model => model.FullName, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
+            <div class="col-md-6">
                 @Html.EditorFor(model => model.FullName, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.FullName, "", new { @class = "text-danger" })
             </div>
@@ -40,7 +40,7 @@
 
         <div class="form-group">
             @Html.LabelFor(model => model.SDT, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
+            <div class="col-md-6">
                 @Html.EditorFor(model => model.SDT, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.SDT, "", new { @class = "text-danger" })
             </div>
@@ -48,7 +48,7 @@
 
         <div class="form-group">
             @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
+            <div class="col-md-6">
                 @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
             </div>
@@ -56,7 +56,7 @@
 
         <div class="form-group">
             @Html.LabelFor(model => model.DiaChi, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
+            <div class="col-md-6">
                 @Html.EditorFor(model => model.DiaChi, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.DiaChi, "", new { @class = "text-danger" })
             </div>
@@ -64,7 +64,7 @@
 
         <div class="form-group">
             @Html.LabelFor(model => model.KieuDT, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
+            <div class="col-md-6">
                 @Html.EditorFor(model => model.KieuDT, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.KieuDT, "", new { @class = "text-danger" })
             </div>
@@ -81,8 +81,9 @@
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
-@section FirstMenu{
+@section DoiTac{
     <div style="padding:10px;">
+<<<<<<< HEAD
         <h3><small>Tìm kiếm</small></h3>
         <input type="text" class="form-control" value="Tìm kiếm mặt hàng" />
         <h3><small>Loại hàng</small></h3>
@@ -98,3 +99,17 @@
         <h3><small>Nhóm hàng</small></h3>
         <p>An empty street, an empty house</p>
     </div>}
+=======
+        <section>
+            <h3>Giao Dịch</h3>
+        </section>
+        <section>
+            <input type="radio" checked="checked" name="time" value="thang" />Tháng này
+            <br /><br /><br />
+            <input type="radio" name="time" value="nam" /> Năm này
+            <br /><br /><br />
+            <input type="radio" name="time" value="all" />Toàn thời gian
+        </section>
+    </div>
+}
+>>>>>>> origin/master

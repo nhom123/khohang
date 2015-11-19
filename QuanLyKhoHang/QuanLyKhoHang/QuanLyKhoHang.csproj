@@ -137,6 +137,7 @@
     <Content Include="Areas\Admin\Views\HangHoa\Details.cshtml" />
     <Content Include="Areas\Admin\Views\HangHoa\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\HangHoa\Index.cshtml" />
+<<<<<<< HEAD
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
@@ -214,6 +215,13 @@
     <Content Include="Content\bootstrap\alerts.less" />
     <Content Include="Content\_bootstrap-datetimepicker.less" />
     <Content Include="Content\bootstrap-datetimepicker-build.less" />
+=======
+    <Content Include="Areas\Admin\Views\PhieuThuChis\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\PhieuThuChis\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\PhieuThuChis\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\PhieuThuChis\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\PhieuThuChis\Index.cshtml" />
+>>>>>>> origin/master
     <None Include="Properties\PublishProfiles\abc.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -232,6 +240,7 @@
     <Compile Include="Areas\Admin\Controllers\DoiTacController.cs" />
     <Compile Include="Areas\Admin\Controllers\GiaoDichController.cs" />
     <Compile Include="Areas\Admin\Controllers\HangHoaController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PhieuThuChisController.cs" />
     <Compile Include="Areas\Main\Controllers\HomeController.cs" />
     <Compile Include="Areas\Main\MainAreaRegistration.cs" />
     <Compile Include="Areas\Sale\Controllers\SaleController.cs" />

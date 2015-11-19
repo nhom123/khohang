@@ -14,6 +14,7 @@ namespace QuanLyKhoHang.Models.Entities
         {
             CongNoes = new HashSet<CongNo>();
             CT_HoaDon = new HashSet<CT_HoaDon>();
+            PhieuThuChies = new HashSet<PhieuThuChi>();
         }
 
         [Key]
@@ -45,5 +46,7 @@ namespace QuanLyKhoHang.Models.Entities
         public virtual DoiTac DoiTac { get; set; }
 
         public virtual NhanVien NhanVien { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<PhieuThuChi> PhieuThuChies { get; set; }
     }
 }

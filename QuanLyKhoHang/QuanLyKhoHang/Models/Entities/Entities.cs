@@ -26,6 +26,7 @@ namespace QuanLyKhoHang.Models.Entities
         public virtual DbSet<NhanVien> NhanViens { get; set; }
         public virtual DbSet<NhomHang> NhomHangs { get; set; }
         public virtual DbSet<PhanQuyen> PhanQuyens { get; set; }
+        public virtual DbSet<PhieuThuChi> PhieuThuChies { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -111,7 +112,7 @@ namespace QuanLyKhoHang.Models.Entities
             modelBuilder.Entity<NganQuy>()
                 .Property(e => e.SoTien)
                 .HasPrecision(15, 3);
-
+            
             modelBuilder.Entity<NhanVien>()
                 .HasMany(e => e.HoaDons)
                 .WithRequired(e => e.NhanVien)
@@ -127,6 +128,14 @@ namespace QuanLyKhoHang.Models.Entities
                 .HasMany(e => e.NhanViens)
                 .WithRequired(e => e.PhanQuyen)
                 .WillCascadeOnDelete(false);
+            modelBuilder.Entity<HoaDon>()
+                .HasMany(e => e.PhieuThuChies)
+                .WithRequired(e => e.HoaDon)
+                .WillCascadeOnDelete(false);
+            modelBuilder.Entity<DoiTac>()
+               .HasMany(e => e.PhieuThuChies)
+               .WithRequired(e => e.DoiTac)
+               .WillCascadeOnDelete(false);
         }
     }
 }

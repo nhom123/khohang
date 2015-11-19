@@ -16,6 +16,7 @@ namespace QuanLyKhoHang.Models.Entities
             HoaDons = new HashSet<HoaDon>();
             NganQuys = new HashSet<NganQuy>();
             NhomHangs = new HashSet<NhomHang>();
+            PhieuThuChies = new HashSet<PhieuThuChi>();
         }
 
         [Key]
@@ -55,5 +56,7 @@ namespace QuanLyKhoHang.Models.Entities
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<NhomHang> NhomHangs { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<PhieuThuChi> PhieuThuChies { get; set; }
     }
 }
